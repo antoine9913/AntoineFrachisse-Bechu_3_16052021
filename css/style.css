@@ -1,18 +1,13 @@
-/* Error: Undefined variable.
- *   ,
- * 4 | $linear-gradient: $linear-gradient(
- *   |                   ^^^^^^^^^^^^^^^^
- *   '
- *   sass/utils/_variables.scss 4:19  @import
- *   sass/main.scss 1:25              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502  $linear-gradient: $linear-gradient(\a   \2502                    ^^^^^^^^^^^^^^^^\a   \2575 \a   sass/utils/_variables.scss 4:19  @import\a   sass/main.scss 1:25              root stylesheet";
+@font-face {
+  font-family: "robotoregular";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+body {
+  margin: auto;
+  font-family: "robotoregular";
+}
+
+/*# sourceMappingURL=style.css.map */
