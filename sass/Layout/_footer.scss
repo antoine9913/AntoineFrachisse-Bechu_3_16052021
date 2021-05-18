@@ -1,0 +1,20 @@
+.footer {
+  height: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    color: white;
+    width: 6rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 20px 25px;
+  }
+}
