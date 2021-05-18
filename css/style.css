@@ -18,21 +18,33 @@
 
 .footer {
   height: 200px;
-  background-color: black;
   display: flex;
   flex-direction: column;
+  color: #fff;
+  background-color: #353535;
+  font-size: 1rem;
 }
 .footer__logo {
-  color: white;
-  width: 6rem;
+  margin: 25px 25px 10px 25px;
+}
+.footer__logo img {
+  filter: invert(1);
+  width: 7rem;
 }
 .footer__menu {
   display: flex;
   flex-direction: column;
   height: 100px;
   align-items: flex-start;
-  justify-content: space-around;
-  margin: 20px 25px;
+  justify-content: space-between;
+  margin: 0px 25px;
+}
+.footer__menu--line i {
+  margin: 0 10px 0 0;
+}
+.footer__menu--line a {
+  text-decoration: none;
+  color: #fff;
 }
 
 body {
