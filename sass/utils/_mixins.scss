@@ -13,7 +13,7 @@
 @mixin choose_restaurants {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 30px 20px 60px 20px;
 
   &__heading {
     font-size: 1.6rem;
@@ -131,6 +131,41 @@
 
     p {
       font-size: 1.1rem;
+    }
+  }
+}
+
+@mixin desc_cards_restaurants {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  box-shadow: 2px 2px 20px #dedede;
+  justify-content: space-between;
+  padding: 20px 25px 20px 15px;
+
+  &__heading {
+    h1 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+
+  &__logo {
+    button {
+      border: none;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 1.4rem;
     }
   }
 }

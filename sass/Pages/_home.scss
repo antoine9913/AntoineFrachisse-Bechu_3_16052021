@@ -46,3 +46,45 @@ body {
 .choose_restaurants {
   @include choose_restaurants;
 }
+
+.contains_restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 60px 20px;
+  background: #f6f6f6;
+}
+
+.restaurants {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.restaurants_picture {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 170px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__new {
+    position: absolute;
+    right: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    background: #9ae3d1;
+
+    h3 {
+      color: #008866;
+      font-size: 1rem;
+      margin: 10px 15px;
+    }
+  }
+}
+
+.restaurants_picture_description {
+  @include desc_cards_restaurants;
+}
