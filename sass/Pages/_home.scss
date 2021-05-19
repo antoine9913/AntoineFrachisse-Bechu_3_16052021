@@ -42,3 +42,7 @@ body {
     font-size: 1rem;
   }
 }
+
+.choose_restaurants {
+  @include choose_restaurants;
+}

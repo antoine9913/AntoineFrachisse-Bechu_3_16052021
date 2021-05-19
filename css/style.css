@@ -87,4 +87,111 @@ body {
   font-size: 1rem;
 }
 
+.choose_restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.choose_restaurants__heading {
+  font-size: 1.6rem;
+}
+.choose_restaurants__contains {
+  display: flex;
+  align-items: center;
+}
+.choose_restaurants__contains--number {
+  background: #9356dc;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  padding: 5px 0px 5px 10px;
+  border-radius: 40px;
+  position: absolute;
+}
+.choose_restaurants__contains--number p {
+  margin: 0;
+}
+.choose_restaurants__contains--text {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f6f6f6;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 13px #ededed;
+  margin: 10px 0 10px 14px;
+}
+.choose_restaurants__contains--text i {
+  margin: 0 20px;
+  color: #7f7f7f;
+  font-size: 1.2rem;
+}
+.choose_restaurants__contains--text p {
+  font-size: 1.1rem;
+}
+.choose_restaurants__contains--text_pink {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f5eeff;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 13px #ededed;
+  margin: 10px 0 10px 14px;
+}
+.choose_restaurants__contains--text_pink i {
+  margin: 0 20px;
+  color: #9356dc;
+}
+.choose_restaurants__contains--text_pink p {
+  font-size: 1.1rem;
+}
+.choose_restaurants--number {
+  background: #9356dc;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  padding: 5px 0px 5px 10px;
+  border-radius: 40px;
+  position: absolute;
+}
+.choose_restaurants--number p {
+  margin: 0;
+}
+.choose_restaurants--text {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f6f6f6;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 13px #ededed;
+  margin: 10px 0 10px 14px;
+}
+.choose_restaurants--text i {
+  margin: 0 20px;
+  color: #7f7f7f;
+  font-size: 1.2rem;
+}
+.choose_restaurants--text p {
+  font-size: 1.1rem;
+}
+.choose_restaurants--text_pink {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f5eeff;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 13px #ededed;
+  margin: 10px 0 10px 14px;
+}
+.choose_restaurants--text_pink i {
+  margin: 0 20px;
+  color: #9356dc;
+}
+.choose_restaurants--text_pink p {
+  font-size: 1.1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
