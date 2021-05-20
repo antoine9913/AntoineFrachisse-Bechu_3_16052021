@@ -10,3 +10,9 @@ $linear-gradient: linear-gradient(
   #e86edb,
   #ff79da
 );
+
+$breakpoints: (
+  tablet: 768px,
+  desktop: 1280px,
+  large: 1600px,
+);
