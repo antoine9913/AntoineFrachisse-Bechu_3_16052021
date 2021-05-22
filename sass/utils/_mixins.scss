@@ -25,6 +25,12 @@
   display: flex;
   flex-direction: column;
   padding: 30px 20px 60px 20px;
+  @include tablet {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-evenly;
+    padding: 70px 40px;
+  }
   @include desktop {
     flex-direction: row;
     width: 100%;
@@ -34,9 +40,15 @@
 
   &__heading {
     font-size: 1.6rem;
+    @include tablet {
+      position: absolute;
+      top: 400px;
+      left: 40px;
+    }
     @include desktop {
       position: absolute;
       top: 390px;
+      left: auto;
     }
   }
 
@@ -61,12 +73,15 @@
     &--text {
       display: flex;
       align-items: center;
-      padding: 10px 12px;
+      padding: 10px 40px 10px 12px;
       background: #f6f6f6;
       width: 100%;
       border-radius: 20px;
       box-shadow: 6px 6px 13px #ededed;
       margin: 10px 0 10px 14px;
+      @include tablet {
+        padding: 10px 62px 10px 12px;
+      }
 
       i {
         margin: 0 20px;
@@ -82,12 +97,15 @@
     &--text_pink {
       display: flex;
       align-items: center;
-      padding: 12px;
+      padding: 10px 40px 10px 12px;
       background: #f5eeff;
       width: 100%;
       border-radius: 20px;
       box-shadow: 5px 5px 13px #ededed;
       margin: 10px 0 10px 14px;
+      @include tablet {
+        padding: 10px 62px 10px 12px;
+      }
 
       i {
         margin: 0 20px;

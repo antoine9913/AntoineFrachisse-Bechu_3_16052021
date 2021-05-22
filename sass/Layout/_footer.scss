@@ -5,9 +5,21 @@
   color: #fff;
   background-color: #353535;
   font-size: 1rem;
+  @include tablet {
+    height: 100px;
+    align-items: center;
+  }
+  @include desktop {
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+  }
 
   &__logo {
     margin: 25px 25px 10px 25px;
+    @include desktop {
+      margin: 0 25px;
+    }
     img {
       filter: invert(1);
       width: 7rem;
@@ -21,6 +33,16 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 0px 25px;
+    @include tablet {
+      flex-direction: row;
+      height: auto;
+      margin: 0;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    @include desktop {
+      align-items: center;
+    }
 
     &--line {
       i {
@@ -28,6 +50,18 @@
       }
 
       a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+    &--line_light {
+      i {
+        margin: 0 10px 0 0;
+      }
+
+      a {
+        font-weight: 300;
         text-decoration: none;
         color: #fff;
       }

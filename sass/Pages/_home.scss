@@ -22,6 +22,7 @@ main {
     right: 150px;
     top: 20px;
     box-shadow: none;
+    border-radius: 10px;
     i {
       margin: 0 0 0 40px;
     }
@@ -76,6 +77,34 @@ main {
   flex-direction: column;
   padding: 40px 20px 60px 20px;
   background: #f6f6f6;
+  @include tablet {
+    padding: 80px 65px;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include desktop {
+    margin: 0 0 40px 0;
+    padding: 80px 100px 50px 100px;
+    width: 66%;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 40px;
+  }
+
+  &__h1 {
+    @include tablet {
+      position: absolute;
+      top: 720px;
+      left: 40px;
+    }
+    @include desktop {
+      position: absolute;
+      top: 620px;
+      left: auto;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -85,6 +114,13 @@ main {
 .restaurants {
   width: 100%;
   margin: 10px 0;
+  @include desktop {
+    width: 300px;
+    margin: 18px 18px;
+  }
+  @include tablet {
+    width: 300px;
+  }
 }
 
 .restaurants_picture {
@@ -105,6 +141,13 @@ main {
     border-radius: 5px;
     margin: 20px;
     background: #9ae3d1;
+    @include tablet {
+      position: relative;
+      width: 82px;
+      margin: 0;
+      left: 200px;
+      bottom: 155px;
+    }
 
     h3 {
       color: #008866;
