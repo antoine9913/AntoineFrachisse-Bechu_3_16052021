@@ -34,7 +34,6 @@
   @include desktop {
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
     padding: 70px 0;
   }
 
@@ -46,7 +45,6 @@
       left: 40px;
     }
     @include desktop {
-      position: absolute;
       top: 390px;
       left: auto;
     }

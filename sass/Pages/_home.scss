@@ -87,9 +87,6 @@ main {
     margin: 0 0 40px 0;
     padding: 80px 100px 50px 100px;
     width: 66%;
-    flex-direction: unset;
-    flex-wrap: wrap;
-    justify-content: space-between;
     border-radius: 40px;
   }
 
@@ -100,7 +97,6 @@ main {
       left: 40px;
     }
     @include desktop {
-      position: absolute;
       top: 620px;
       left: auto;
     }
@@ -114,12 +110,11 @@ main {
 .restaurants {
   width: 100%;
   margin: 10px 0;
-  @include desktop {
-    width: 300px;
-    margin: 18px 18px;
-  }
   @include tablet {
     width: 300px;
+  }
+  @include desktop {
+    margin: 18px 18px;
   }
 }
 

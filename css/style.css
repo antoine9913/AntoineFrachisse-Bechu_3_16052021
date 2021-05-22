@@ -45,7 +45,6 @@
   .footer {
     height: 50px;
     flex-direction: row;
-    align-items: center;
   }
 }
 .footer__logo {
@@ -71,8 +70,6 @@
 @media screen and (min-width: 768px) {
   .footer__menu {
     flex-direction: row;
-    height: auto;
-    margin: 0;
     justify-content: space-evenly;
     width: 100%;
   }
@@ -80,6 +77,7 @@
 @media screen and (min-width: 1024px) {
   .footer__menu {
     align-items: center;
+    height: auto;
   }
 }
 .footer__menu--line i {
@@ -185,7 +183,6 @@ body {
   .choose_restaurants {
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
     padding: 70px 0;
   }
 }
@@ -201,7 +198,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .choose_restaurants__heading {
-    position: absolute;
     top: 390px;
     left: auto;
   }
@@ -334,9 +330,6 @@ body {
     margin: 0 0 40px 0;
     padding: 80px 100px 50px 100px;
     width: 66%;
-    flex-direction: unset;
-    flex-wrap: wrap;
-    justify-content: space-between;
     border-radius: 40px;
   }
 }
@@ -349,7 +342,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .contains_restaurants__h1 {
-    position: absolute;
     top: 620px;
     left: auto;
   }
@@ -362,15 +354,14 @@ body {
   width: 100%;
   margin: 10px 0;
 }
-@media screen and (min-width: 1024px) {
-  .restaurants {
-    width: 300px;
-    margin: 18px 18px;
-  }
-}
 @media screen and (min-width: 768px) {
   .restaurants {
     width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    margin: 18px 18px;
   }
 }
 
