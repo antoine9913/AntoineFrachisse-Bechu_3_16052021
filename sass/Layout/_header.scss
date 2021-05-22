@@ -3,7 +3,15 @@
   justify-content: center;
   align-items: center;
   height: 4rem;
+  @include desktop {
+    padding: 0 0 0 150px;
+    justify-content: flex-start;
+    height: 6rem;
+  }
   &__logo img {
     width: 11rem;
+    @include desktop {
+      width: 14rem;
+    }
   }
 }

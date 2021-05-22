@@ -3,6 +3,14 @@ body {
   font-family: "robotoregular", sans-serif;
 }
 
+main {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -11,6 +19,12 @@ body {
   box-shadow: 0px -2px 3px #d0d0d0;
   @include desktop {
     position: absolute;
+    right: 150px;
+    top: 20px;
+    box-shadow: none;
+    i {
+      margin: 0 0 0 40px;
+    }
   }
 
   &__text {
@@ -24,6 +38,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: $color-grey;
+  @include desktop {
+    width: 60%;
+    border-radius: 40px;
+    box-shadow: 3px 3px 6px #c6c6c6;
+  }
 
   &__h1 {
     font-size: 1.4rem;
@@ -38,11 +57,12 @@ body {
 
   &__button {
     margin: 30px 0 50px 0;
-    padding: 20px;
+    padding: 16px 20px;
     color: #fff;
     border: none;
     border-radius: 40px;
     background: $linear-gradient;
+    box-shadow: 3px 3px 6px #c6c6c6;
     font-size: 1rem;
   }
 }

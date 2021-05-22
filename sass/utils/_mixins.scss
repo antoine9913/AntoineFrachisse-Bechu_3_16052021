@@ -20,19 +20,24 @@
     @content;
   }
 }
-@mixin large {
-  @media screen and (min-width: map-get($breakpoints, large)) {
-    @content;
-  }
-}
 
 @mixin choose_restaurants {
   display: flex;
   flex-direction: column;
   padding: 30px 20px 60px 20px;
+  @include desktop {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 70px 0;
+  }
 
   &__heading {
     font-size: 1.6rem;
+    @include desktop {
+      position: absolute;
+      top: 390px;
+    }
   }
 
   &__contains {
@@ -42,9 +47,9 @@
     &--number {
       background: $color-primary;
       color: #fff;
-      height: 20px;
-      width: 20px;
-      padding: 5px 0px 5px 10px;
+      height: 15px;
+      width: 15px;
+      padding: 5px 2px 5px 8px;
       border-radius: 40px;
       position: absolute;
 
@@ -56,11 +61,11 @@
     &--text {
       display: flex;
       align-items: center;
-      padding: 12px;
+      padding: 10px 12px;
       background: #f6f6f6;
       width: 100%;
       border-radius: 20px;
-      box-shadow: 5px 5px 13px #ededed;
+      box-shadow: 6px 6px 13px #ededed;
       margin: 10px 0 10px 14px;
 
       i {
@@ -70,7 +75,7 @@
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
 
@@ -90,7 +95,7 @@
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
   }
@@ -168,7 +173,7 @@
     }
 
     span {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 300;
     }
   }
