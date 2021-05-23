@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   height: 4rem;
@@ -8,10 +9,20 @@
     justify-content: flex-start;
     height: 6rem;
   }
-  &__logo img {
-    width: 11rem;
-    @include desktop {
-      width: 14rem;
+  &__logo {
+    margin: 0 70px 0 65px;
+    img {
+      width: 11rem;
+      @include desktop {
+        width: 14rem;
+      }
+    }
+  }
+
+  &__backmenu {
+    i {
+      color: black;
+      font-size: 1.4rem;
     }
   }
 }
