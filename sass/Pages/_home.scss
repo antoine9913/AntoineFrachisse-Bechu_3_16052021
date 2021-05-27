@@ -155,3 +155,24 @@ main {
 .restaurants_picture_description {
   @include desc_cards_restaurants;
 }
+
+.contain_menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__picture {
+    position: absolute;
+    top: 60px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.menu {
+  @include menu;
+}
+
+.dishes {
+  @include dishes;
+}
