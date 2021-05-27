@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @font-face {
   font-family: "robotoregular";
   src: url("Roboto-Regular-webfont.eot");
@@ -14,8 +15,6 @@
 }
 @media screen and (min-width: 1024px) {
   .header {
-    padding: 0 0 0 150px;
-    justify-content: flex-start;
     height: 6rem;
   }
 }
@@ -28,6 +27,15 @@
 @media screen and (min-width: 1024px) {
   .header__logo img {
     width: 14rem;
+  }
+}
+.header__backmenu {
+  position: absolute;
+  left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header__backmenu {
+    left: 40px;
   }
 }
 .header__backmenu i {
@@ -442,8 +450,20 @@ body {
   position: absolute;
   top: 60px;
 }
+@media screen and (min-width: 1024px) {
+  .contain_menu__picture {
+    top: 90px;
+  }
+}
 .contain_menu img {
   width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .contain_menu img {
+    height: 350px;
+  }
 }
 
 .menu {
@@ -454,10 +474,34 @@ body {
   border-radius: 40px 40px 0 0;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    padding: 60px 0 100px 0;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin: 280px 0 0 0;
+  }
+}
 .menu__heading {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .menu__heading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+.menu__heading--h1 {
+  font-family: "Shrikhand", "cursive";
 }
 .menu__heading--heartlogo button {
   border: none;
@@ -485,6 +529,12 @@ body {
 }
 .menu__command {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .menu__command {
+    position: absolute;
+    bottom: -20px;
+  }
 }
 .menu__command--btn {
   margin: 50px auto;

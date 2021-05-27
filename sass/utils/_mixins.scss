@@ -214,10 +214,28 @@
   margin: 200px 0 0 0;
   border-radius: 40px 40px 0 0;
   flex-direction: column;
+  @include tablet {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    padding: 60px 0 100px 0;
+    justify-content: space-evenly;
+  }
+  @include desktop {
+    margin: 280px 0 0 0;
+  }
   &__heading {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include tablet {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    &--h1 {
+      font-family: "Shrikhand", "cursive";
+    }
     &--heartlogo {
       button {
         border: none;
@@ -251,6 +269,10 @@
   }
   &__command {
     display: flex;
+    @include tablet {
+      position: absolute;
+      bottom: -20px;
+    }
     &--btn {
       margin: 50px auto;
       padding: 16px 50px;

@@ -5,8 +5,6 @@
   align-items: center;
   height: 4rem;
   @include desktop {
-    padding: 0 0 0 150px;
-    justify-content: flex-start;
     height: 6rem;
   }
   &__logo {
@@ -20,6 +18,11 @@
   }
 
   &__backmenu {
+    position: absolute;
+    left: 20px;
+    @include tablet {
+      left: 40px;
+    }
     i {
       color: black;
       font-size: 1.4rem;

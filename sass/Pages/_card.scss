@@ -1,0 +1,28 @@
+.contain_menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__picture {
+    position: absolute;
+    top: 60px;
+    @include desktop {
+      top: 90px;
+    }
+  }
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    @include desktop {
+      height: 350px;
+    }
+  }
+}
+
+.menu {
+  @include menu;
+}
+
+.dishes {
+  @include dishes;
+}
