@@ -135,7 +135,7 @@ body {
 @media screen and (min-width: 1024px) {
   .location {
     position: absolute;
-    right: 150px;
+    right: 80px;
     top: 20px;
     box-shadow: none;
     border-radius: 10px;
