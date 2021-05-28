@@ -180,6 +180,7 @@ body {
   background: linear-gradient(to top left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   box-shadow: 3px 3px 6px #c6c6c6;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .choose_restaurants {
@@ -545,6 +546,7 @@ body {
   background: linear-gradient(to top left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   box-shadow: 3px 3px 6px #c6c6c6;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .dishes {
