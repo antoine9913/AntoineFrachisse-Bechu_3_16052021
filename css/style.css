@@ -589,6 +589,9 @@ body {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dishes__seasoning {
   display: flex;
@@ -598,12 +601,14 @@ body {
 .dishes__seasoning span {
   font-size: 0.9rem;
   font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dishes__seasoning p {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
-  text-overflow: ellipsis;
 }
 
 .dishes__checklogo {
@@ -618,6 +623,7 @@ body {
   position: absolute;
   padding: 20px;
   right: -50px;
+  text-overflow: ellipsis;
   top: -18px;
   opacity: 0;
   transition: transform 330ms ease-in-out;

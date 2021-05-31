@@ -325,6 +325,9 @@
       margin: 0;
       font-size: 1.1rem;
       font-weight: 500;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
   &__seasoning {
@@ -334,12 +337,14 @@
     span {
       font-size: 0.9rem;
       font-weight: 300;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
     p {
       margin: 0;
       font-size: 1rem;
       font-weight: 500;
-      text-overflow: ellipsis;
     }
   }
 }
@@ -356,6 +361,7 @@
   position: absolute;
   padding: 20px;
   right: -50px;
+  text-overflow: ellipsis;
   top: -18px;
   opacity: 0;
   transition: transform 330ms ease-in-out;
