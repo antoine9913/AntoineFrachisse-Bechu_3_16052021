@@ -119,6 +119,13 @@ main {
   }
 }
 
+.contains_cards_restaurants {
+  display: flex;
+  &__logo {
+    display: inline-block;
+  }
+}
+
 .restaurants_picture {
   height: 170px;
   display: flex;

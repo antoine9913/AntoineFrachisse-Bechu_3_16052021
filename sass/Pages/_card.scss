@@ -26,3 +26,7 @@
 .dishes {
   @include dishes;
 }
+
+.dishes__checklogo {
+  @include dishes_logo;
+}
