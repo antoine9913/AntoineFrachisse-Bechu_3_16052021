@@ -195,14 +195,42 @@
   }
 
   &__logo {
-    button {
-      border: none;
-      background: #fff;
-      cursor: pointer;
+    .heart {
+      width: 22px;
+      height: 20px;
+      background: $linear-gradient;
+      clip-path: polygon(
+        51% 105%,
+        63% 90%,
+        74% 79%,
+        84% 68%,
+        97% 53%,
+        100% 40%,
+        100% 25%,
+        93% 10%,
+        85% 4%,
+        70% 2%,
+        53% 10%,
+        51% 12%,
+        40% 5%,
+        26% 1%,
+        9% 10%,
+        -4% 37%,
+        9% 58%,
+        18% 69%,
+        30% 81%,
+        40% 93%
+      );
     }
 
     .far {
+      transition: all 0.3s linear 0s;
+      height: 100%;
+      background: #f6f6f6;
       font-size: 1.4rem;
+    }
+    .heart:hover .far {
+      height: 0;
     }
   }
 }
@@ -237,10 +265,45 @@
       font-family: "Shrikhand", "cursive";
     }
     &--heartlogo {
-      button {
-        border: none;
+      display: flex;
+      align-items: center;
+
+      .heart {
+        width: 22px;
+        height: 20px;
+        background: $linear-gradient;
+        clip-path: polygon(
+          51% 105%,
+          63% 90%,
+          74% 79%,
+          84% 68%,
+          97% 53%,
+          100% 40%,
+          100% 25%,
+          93% 10%,
+          85% 4%,
+          70% 2%,
+          53% 10%,
+          51% 12%,
+          40% 5%,
+          26% 1%,
+          9% 10%,
+          -4% 37%,
+          9% 58%,
+          18% 69%,
+          30% 81%,
+          40% 93%
+        );
+      }
+
+      .far {
+        transition: all 0.3s linear 0s;
+        height: 100%;
         background: #f6f6f6;
-        cursor: pointer;
+      }
+
+      .heart:hover .far {
+        height: 0;
       }
 
       i {
@@ -269,6 +332,7 @@
       text-decoration: none;
     }
   }
+
   &__command {
     display: flex;
     @include tablet {
