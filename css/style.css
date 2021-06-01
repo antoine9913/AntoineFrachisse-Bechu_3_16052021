@@ -552,6 +552,9 @@ body {
   font-weight: 300;
   margin: 6px 0;
 }
+.menu__dishes {
+  width: 300px;
+}
 .menu__dishes a {
   color: black;
   display: flex;
