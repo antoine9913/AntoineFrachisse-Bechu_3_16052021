@@ -27,6 +27,42 @@
   @include dishes;
 }
 
+.dishes--1 {
+  animation-delay: 0.166667s;
+}
+
+.dishes--2 {
+  animation-delay: 0.333334s;
+}
+
+.dishes--3 {
+  animation-delay: 0.500001s;
+}
+
+.dishes--4 {
+  animation-delay: 0.666668s;
+}
+
+.dishes--5 {
+  animation-delay: 0.833335s;
+}
+
+.dishes--6 {
+  animation-delay: 1.000002s;
+}
+
+.dishes--7 {
+  animation-delay: 1.166669s;
+}
+
+.dishes--8 {
+  animation-delay: 1.333336s;
+}
+
+.dishes--9 {
+  animation-delay: 1.500003s;
+}
+
 .dishes__checklogo {
   @include dishes_logo;
 }

@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes move-cards {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "robotoregular";
   src: url("Roboto-Regular-webfont.eot");
@@ -552,8 +560,10 @@ body {
   font-weight: 300;
   margin: 6px 0;
 }
-.menu__dishes {
-  width: 300px;
+@media screen and (min-width: 768px) {
+  .menu__dishes {
+    width: 300px;
+  }
 }
 .menu__dishes a {
   color: black;
@@ -595,6 +605,8 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  animation: move-cards 1s cubic-bezier(0, 0, 0, 1) forwards;
+  opacity: 0;
 }
 .dishes:hover {
   padding-right: 70px;
@@ -633,6 +645,42 @@ body {
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.dishes--1 {
+  animation-delay: 0.166667s;
+}
+
+.dishes--2 {
+  animation-delay: 0.333334s;
+}
+
+.dishes--3 {
+  animation-delay: 0.500001s;
+}
+
+.dishes--4 {
+  animation-delay: 0.666668s;
+}
+
+.dishes--5 {
+  animation-delay: 0.833335s;
+}
+
+.dishes--6 {
+  animation-delay: 1.000002s;
+}
+
+.dishes--7 {
+  animation-delay: 1.166669s;
+}
+
+.dishes--8 {
+  animation-delay: 1.333336s;
+}
+
+.dishes--9 {
+  animation-delay: 1.500003s;
 }
 
 .dishes__checklogo {
