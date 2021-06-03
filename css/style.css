@@ -157,7 +157,6 @@ body {
   width: 100%;
   margin: auto;
   animation: disparition 0.01s;
-  animation-delay: 1.75s;
   animation-fill-mode: both;
 }
 
