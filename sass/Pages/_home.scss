@@ -3,7 +3,7 @@ body {
   font-family: "robotoregular", sans-serif;
 }
 
-.main0 {
+.section_loader {
   position: absolute;
   width: 100%;
   margin: auto;
@@ -11,15 +11,15 @@ body {
   animation-fill-mode: both;
 }
 
-.section_loader1 {
+.contain_loader1 {
   @include loader1;
 }
 
-.main1 {
+.section_page {
   animation: apparition 3s;
 }
 
-.main2 {
+.main {
   @include desktop {
     display: flex;
     flex-direction: column;

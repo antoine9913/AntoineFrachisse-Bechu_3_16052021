@@ -152,7 +152,7 @@ body {
   font-family: "robotoregular", sans-serif;
 }
 
-.main0 {
+.section_loader {
   position: absolute;
   width: 100%;
   margin: auto;
@@ -160,7 +160,7 @@ body {
   animation-fill-mode: both;
 }
 
-.section_loader1 {
+.contain_loader1 {
   height: 677px;
   display: flex;
   justify-content: space-evenly;
@@ -168,20 +168,20 @@ body {
   flex-direction: row-reverse;
 }
 @media screen and (min-width: 768px) {
-  .section_loader1 {
+  .contain_loader1 {
     justify-content: center;
   }
 }
-.section_loader1__logo img {
+.contain_loader1__logo img {
   width: 14rem;
 }
-.section_loader1__quart_circle1 {
+.contain_loader1__quart_circle1 {
   border-radius: 50px;
   border: 6px solid transparent;
   position: relative;
   animation: spin 1s linear infinite;
 }
-.section_loader1__quart_circle1::after {
+.contain_loader1__quart_circle1::after {
   content: "";
   position: absolute;
   top: -6px;
@@ -193,23 +193,23 @@ body {
   border-top: 6px solid #9356dc;
   animation: spin 1s linear infinite;
 }
-.section_loader1 .loader1 {
+.contain_loader1 .loader1 {
   width: 50px;
   height: 50px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .section_loader1 .loader1 {
+  .contain_loader1 .loader1 {
     margin: 50px;
   }
 }
-.section_loader1__quart_circle2 {
+.contain_loader1__quart_circle2 {
   border-radius: 50px;
   border: 5px solid transparent;
   position: relative;
   animation: spin 1.5s linear infinite;
 }
-.section_loader1__quart_circle2::after {
+.contain_loader1__quart_circle2::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -221,19 +221,19 @@ body {
   border-top: 5px solid #ff79da;
   animation: spin 1.5s linear infinite;
 }
-.section_loader1 .loader2 {
+.contain_loader1 .loader2 {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 5px;
   left: 5px;
 }
-.section_loader1__quart_circle3 {
+.contain_loader1__quart_circle3 {
   border-radius: 50px;
   border: 4px solid transparent;
   position: relative;
 }
-.section_loader1__quart_circle3::after {
+.contain_loader1__quart_circle3::after {
   content: "";
   position: absolute;
   top: -4px;
@@ -245,7 +245,7 @@ body {
   border-top: 4px solid #99e2d0;
   animation: spin 1.5s linear infinite;
 }
-.section_loader1 .loader3 {
+.contain_loader1 .loader3 {
   width: 13px;
   height: 13px;
   position: absolute;
@@ -253,12 +253,12 @@ body {
   left: 15px;
 }
 
-.main1 {
+.section_page {
   animation: apparition 3s;
 }
 
 @media screen and (min-width: 1024px) {
-  .main2 {
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
