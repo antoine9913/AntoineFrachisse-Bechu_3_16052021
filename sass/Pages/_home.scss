@@ -16,14 +16,6 @@ body {
   @include loader1;
 }
 
-.section_loader2 {
-  @include loader2;
-}
-
-.section_loader3 {
-  @include loader3;
-}
-
 .main1 {
   animation: apparition 3s;
 }
