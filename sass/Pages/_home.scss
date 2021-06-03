@@ -15,11 +15,11 @@ body {
   @include loader1;
 }
 
-.section_page {
+.main {
   animation: apparition 3s;
 }
 
-.main {
+.bloc-page {
   @include desktop {
     display: flex;
     flex-direction: column;

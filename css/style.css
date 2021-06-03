@@ -253,12 +253,12 @@ body {
   left: 15px;
 }
 
-.section_page {
+.main {
   animation: apparition 3s;
 }
 
 @media screen and (min-width: 1024px) {
-  .main {
+  .bloc-page {
     display: flex;
     flex-direction: column;
     align-items: center;
