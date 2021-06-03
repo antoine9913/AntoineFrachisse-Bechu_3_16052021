@@ -3,7 +3,32 @@ body {
   font-family: "robotoregular", sans-serif;
 }
 
-main {
+.main0 {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  animation: disparition 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+}
+
+.section_loader1 {
+  @include loader1;
+}
+
+.section_loader2 {
+  @include loader2;
+}
+
+.section_loader3 {
+  @include loader3;
+}
+
+.main1 {
+  animation: apparition 3s;
+}
+
+.main2 {
   @include desktop {
     display: flex;
     flex-direction: column;
