@@ -272,6 +272,70 @@
   }
 }
 
+@mixin contains_cards_restaurants_index {
+  position: relative;
+  &__logo {
+    position: absolute;
+    right: 20px;
+    top: 220px;
+    @include desktop {
+      right: 40px;
+    }
+    .heart {
+      cursor: pointer;
+      position: relative;
+      border: none;
+      width: 22px;
+      height: 20px;
+      background: linear-gradient(
+        to top left,
+        #9356dc,
+        #b35cdc,
+        #cf64dc,
+        #e86edb,
+        #ff79da
+      );
+      clip-path: polygon(
+        51% 105%,
+        63% 90%,
+        74% 79%,
+        84% 68%,
+        97% 53%,
+        100% 40%,
+        100% 25%,
+        93% 10%,
+        85% 4%,
+        70% 2%,
+        53% 10%,
+        51% 12%,
+        40% 5%,
+        26% 1%,
+        9% 10%,
+        -4% 37%,
+        9% 58%,
+        18% 69%,
+        30% 81%,
+        40% 93%
+      );
+    }
+
+    .far {
+      transition: all 0.3s linear 0s;
+      height: 100%;
+      background: #f6f6f6;
+      font-size: 1.39rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    .heart:focus .far {
+      height: 0;
+    }
+  }
+}
+
 @mixin desc_cards_restaurants {
   background: #fff;
   display: flex;
@@ -279,8 +343,8 @@
   border-radius: 0 0 20px 20px;
   color: black;
   box-shadow: 2px 2px 20px #dedede;
-  justify-content: space-between;
   padding: 20px 25px 20px 15px;
+  position: relative;
 
   &__heading {
     h1 {
@@ -295,7 +359,10 @@
   }
 
   &__logo {
+    position: absolute;
+    right: 20px;
     .heart {
+      cursor: pointer;
       position: relative;
       border: none;
       width: 22px;
@@ -383,6 +450,7 @@
       align-items: center;
 
       .heart {
+        cursor: pointer;
         position: relative;
         border: none;
         width: 22px;

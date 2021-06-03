@@ -136,11 +136,8 @@ body {
   }
 }
 
-.contains_cards_restaurants {
-  display: flex;
-  &__logo {
-    display: inline-block;
-  }
+.contains_cards_restaurants_index {
+  @include contains_cards_restaurants_index;
 }
 
 .restaurants_picture {
