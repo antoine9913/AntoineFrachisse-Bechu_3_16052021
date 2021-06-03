@@ -383,9 +383,18 @@
       align-items: center;
 
       .heart {
+        position: relative;
+        border: none;
         width: 22px;
         height: 20px;
-        background: $linear-gradient;
+        background: linear-gradient(
+          to top left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
         clip-path: polygon(
           51% 105%,
           63% 90%,
@@ -414,9 +423,14 @@
         transition: all 0.3s linear 0s;
         height: 100%;
         background: #f6f6f6;
+        font-size: 1.39rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
-
-      .heart:hover .far {
+      .heart:focus .far {
         height: 0;
       }
 
