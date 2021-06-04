@@ -22,6 +22,11 @@
 }
 
 @mixin loader1 {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  animation: disparition 0.01s;
+  animation-fill-mode: both;
   height: 677px;
   display: flex;
   justify-content: space-evenly;
@@ -572,7 +577,6 @@
   transition: padding-right 450ms ease-in-out;
   animation: move-cards 1s cubic-bezier(0, 0, 0, 1) forwards;
   opacity: 0;
-  touch-action: auto;
   &:hover {
     padding-right: 70px;
   }
