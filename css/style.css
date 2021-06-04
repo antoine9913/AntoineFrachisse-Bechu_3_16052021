@@ -801,6 +801,7 @@ body {
   transition: padding-right 450ms ease-in-out;
   animation: move-cards 1s cubic-bezier(0, 0, 0, 1) forwards;
   opacity: 0;
+  touch-action: auto;
 }
 .dishes:hover {
   padding-right: 70px;
