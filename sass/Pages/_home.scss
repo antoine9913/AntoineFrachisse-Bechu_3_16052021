@@ -106,6 +106,8 @@ body {
   }
 
   &__h1 {
+    font-weight: bold;
+    font-size: 1.4rem;
     @include tablet {
       position: absolute;
       top: 720px;

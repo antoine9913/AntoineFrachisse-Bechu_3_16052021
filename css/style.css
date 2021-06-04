@@ -493,6 +493,10 @@ body {
     border-radius: 40px;
   }
 }
+.contains_restaurants__h1 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
 @media screen and (min-width: 768px) {
   .contains_restaurants__h1 {
     position: absolute;
