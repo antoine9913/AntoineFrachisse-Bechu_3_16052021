@@ -317,10 +317,16 @@ body {
   color: #fff;
   border: none;
   border-radius: 40px;
-  background: linear-gradient(to top left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  box-shadow: 3px 3px 6px #c6c6c6;
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 3px 3px 6px #c2c2c2;
   font-size: 1rem;
   cursor: pointer;
+}
+.explore_restaurants__button:hover {
+  transform: scale(1.02);
+  transition: transform 200ms;
+  background: linear-gradient(350deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  box-shadow: 3px 3px 6px #808080;
 }
 
 .choose_restaurants {
@@ -769,10 +775,16 @@ body {
   color: #fff;
   border: none;
   border-radius: 40px;
-  background: linear-gradient(to top left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 3px 3px 6px #c6c6c6;
   font-size: 1rem;
   cursor: pointer;
+}
+.menu__command--btn:hover {
+  transform: scale(1.02);
+  transition: transform 200ms;
+  background: linear-gradient(350deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  box-shadow: 3px 3px 6px #808080;
 }
 
 .dishes {

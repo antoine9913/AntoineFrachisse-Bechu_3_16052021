@@ -79,9 +79,15 @@ body {
     border: none;
     border-radius: 40px;
     background: $linear-gradient;
-    box-shadow: 3px 3px 6px #c6c6c6;
+    box-shadow: 3px 3px 6px #c2c2c2;
     font-size: 1rem;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+      transition: transform 200ms;
+      background: $linear-gradient-lighter;
+      box-shadow: 3px 3px 6px #808080;
+    }
   }
 }
 

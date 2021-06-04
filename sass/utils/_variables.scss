@@ -3,12 +3,14 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $color-grey: #f6f6f6;
 $linear-gradient: linear-gradient(
-  to top left,
-  #9356dc,
-  #b35cdc,
-  #cf64dc,
-  #e86edb,
-  #ff79da
+  350deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$linear-gradient-lighter: linear-gradient(
+  350deg,
+  rgba(147, 86, 220, 0.9) 0%,
+  rgba(255, 121, 218, 0.9) 100%
 );
 
 $breakpoints: (
