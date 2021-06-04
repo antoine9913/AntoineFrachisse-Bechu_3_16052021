@@ -563,7 +563,7 @@ body {
   bottom: 0;
   right: 0;
 }
-.contains_cards_restaurants_index__logo .heart:focus .far {
+.contains_cards_restaurants_index__logo .heart:hover .far {
   height: 0;
 }
 
@@ -643,7 +643,7 @@ body {
   bottom: 0;
   right: 0;
 }
-.restaurants_picture_description__logo .heart:focus .far {
+.restaurants_picture_description__logo .heart:hover .far {
   height: 0;
 }
 
