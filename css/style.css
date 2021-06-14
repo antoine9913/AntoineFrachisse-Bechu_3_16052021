@@ -368,8 +368,9 @@ body {
   border-radius: 40px;
   position: absolute;
 }
-.choose_restaurants__contains--number p {
+.choose_restaurants__contains--number h2 {
   margin: 0;
+  font-size: 1rem;
 }
 .choose_restaurants__contains--text {
   display: flex;
@@ -425,8 +426,9 @@ body {
   border-radius: 40px;
   position: absolute;
 }
-.choose_restaurants--number p {
+.choose_restaurants--number h2 {
   margin: 0;
+  font-size: 1rem;
 }
 .choose_restaurants--text {
   display: flex;
